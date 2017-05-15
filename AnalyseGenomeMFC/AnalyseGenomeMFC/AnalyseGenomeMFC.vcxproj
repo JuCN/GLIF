@@ -188,6 +188,7 @@
   <ItemGroup>
     <ClInclude Include="AnalyseGenomeMFC.h" />
     <ClInclude Include="AnalyseGenomeMFCDlg.h" />
+    <ClInclude Include="ClientSocket.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="ConnectedSocket.h" />
     <ClInclude Include="Constantes.h" />
@@ -211,6 +212,7 @@
   <ItemGroup>
     <ClCompile Include="AnalyseGenomeMFC.cpp" />
     <ClCompile Include="AnalyseGenomeMFCDlg.cpp" />
+    <ClCompile Include="ClientSocket.cpp" />
     <ClCompile Include="ConnectedSocket.cpp" />
     <ClCompile Include="Database.cpp" />
     <ClCompile Include="Dictionnaire.cpp" />

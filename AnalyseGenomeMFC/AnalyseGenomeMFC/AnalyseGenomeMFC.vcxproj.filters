@@ -97,6 +97,9 @@
     <ClInclude Include="Gestionnaire.h">
       <Filter>Model</Filter>
     </ClInclude>
+    <ClInclude Include="ClientSocket.h">
+      <Filter>Network</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConnectedSocket.cpp">
@@ -149,6 +152,9 @@
     </ClCompile>
     <ClCompile Include="Gestionnaire.cpp">
       <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientSocket.cpp">
+      <Filter>Network</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
