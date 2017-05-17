@@ -21,13 +21,16 @@ void ConnectedSocket::OnReceive(int nErrorCode)
 	char szBuff[BUFF_LEN];
 
 	int nReceivedSize = Receive(szBuff, BUFF_LEN);
+	TRACE1("Receive %d bytes\n", nReceivedSize);
 
-	if (nReceivedSize <= 0)
+	if(nReceivedSize <= 0)
+		TRACE1("Socket Error : %d\n", GetLastError());
 		return;
 
 	szBuff[nReceivedSize] = '\0';
+	TRACE(szBuff);
 
-	string strResponse = "hello\n";
+	string strResponse = "J'ai bien reçu ta merde\n";
 
 	int nSentBytes = 0;
 	const char* pszBuff = strResponse.c_str();

@@ -171,6 +171,8 @@ void CAnalyseGenomeMFCDlg::OnBnClickedStartserver()
 		AfxMessageBox(_T("Unable to listen"));
 		listenerSock.Close();
 	}
+	diag.Create(IDD_FENETRE_TEST, this);
+	diag.ShowWindow(SW_SHOW);
 }
 
 

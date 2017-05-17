@@ -5,6 +5,7 @@
 #pragma once
 
 #include "ListenerSocket.h"
+#include "DiagTest.h"
 
 // boîte de dialogue CAnalyseGenomeMFCDlg
 class CAnalyseGenomeMFCDlg : public CDialogEx
@@ -41,4 +42,5 @@ public:
 private:
 	const int LISTENER_PORT = 8080;
 	ListenerSocket listenerSock;
+	DiagTest diag;
 };

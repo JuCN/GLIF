@@ -193,6 +193,7 @@
     <ClInclude Include="ConnectedSocket.h" />
     <ClInclude Include="Constantes.h" />
     <ClInclude Include="Database.h" />
+    <ClInclude Include="DiagTest.h" />
     <ClInclude Include="Dictionnaire.h" />
     <ClInclude Include="Gestionnaire.h" />
     <ClInclude Include="Maladie.h" />
@@ -215,6 +216,7 @@
     <ClCompile Include="ClientSocket.cpp" />
     <ClCompile Include="ConnectedSocket.cpp" />
     <ClCompile Include="Database.cpp" />
+    <ClCompile Include="DiagTest.cpp" />
     <ClCompile Include="Dictionnaire.cpp" />
     <ClCompile Include="Gestionnaire.cpp" />
     <ClCompile Include="ListenerSocket.cpp" />

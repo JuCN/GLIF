@@ -28,5 +28,7 @@ void ListenerSocket::OnAccept(int nErrorCode)
 		pConnectedSock->GetPeerName(strPeerName, uiPort);
 	}
 
+	TRACE("Connection success\n");
+
 	CAsyncSocket::OnAccept(nErrorCode);
 }

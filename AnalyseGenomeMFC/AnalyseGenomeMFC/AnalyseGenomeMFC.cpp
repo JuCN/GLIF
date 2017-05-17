@@ -5,6 +5,7 @@
 #include "stdafx.h"
 #include "AnalyseGenomeMFC.h"
 #include "AnalyseGenomeMFCDlg.h"
+#include "DiagTest.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -77,8 +78,13 @@ BOOL CAnalyseGenomeMFCApp::InitInstance()
 	SetRegistryKey(_T("Applications locales générées par AppWizard"));
 
 	CAnalyseGenomeMFCDlg dlg;
+	DiagTest dlgTest;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
+	//dlgTest.Create(IDD_FENETRE_TEST);
+	//dlgTest.ShowWindow(SW_SHOW);
+	//dlg.Create(IDD_ANALYSEGENOMEMFC_DIALOG);
+	
 	if (nResponse == IDOK)
 	{
 		// TODO: placez ici le code définissant le comportement lorsque la boîte de dialogue est
