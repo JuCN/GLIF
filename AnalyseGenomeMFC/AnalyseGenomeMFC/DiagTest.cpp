@@ -16,7 +16,7 @@ IMPLEMENT_DYNAMIC(DiagTest, CDialogEx)
 
 DiagTest::DiagTest(CWnd* pParent /*=NULL*/)
 	: CDialogEx(IDD_FENETRE_TEST, pParent)
-	, textToSend(_T("")) {
+	, textToSend(_T("")), m_reponse(_T("Attente...")) {
 }
 
 DiagTest::~DiagTest()
@@ -27,6 +27,7 @@ void DiagTest::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Text(pDX, IDC_EDIT1, textToSend);
+	DDX_Text(pDX, IDC_EDIT3, m_reponse);
 }
 
 
@@ -51,8 +52,13 @@ void DiagTest::OnEnChangeEdit1() {
 
 
 void DiagTest::OnBnClickedSend() {
+	UpdateData(true);
+	
+
 	TRACE1("Je clique sur Send avec : %s\n", textToSend);
+	m_reponse = textToSend;
 	sock.Send(textToSend, textToSend.GetLength());
+	UpdateData(false);
 }
 
 

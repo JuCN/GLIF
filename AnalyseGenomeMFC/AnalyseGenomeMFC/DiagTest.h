@@ -33,4 +33,6 @@ protected:
 public:
 	afx_msg void OnBnClickedSend();
 	afx_msg void OnBnClickedConnect();
+private:
+	CString m_reponse;
 };
