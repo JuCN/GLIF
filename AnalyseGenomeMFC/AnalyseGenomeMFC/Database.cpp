@@ -43,7 +43,7 @@ int Database::create_tables()
 	int code;
 	char *error;
 
-	const char *sqlCreateTable = "CREATE TABLE Patient (id LONG PRIMARY KEY, nom STRING, prenom STRING, mail STRING, mdp STRING);";
+	const char *sqlCreateTable = "CREATE TABLE Patient (id LONG PRIMARY KEY, nom STRING, prenom STRING, mail STRING, mdp STRING); CREATE TABLE Maladie (id INT PRIMARY KEY, nom STRING, description STRING, genome STRING); CREATE TABLE Medecin(id LONG PRIMARY KEY, nom STRING, prenom STRING, mail STRING, mdp STRING)";
 
 	code = sqlite3_exec(database, sqlCreateTable, NULL, NULL, &error);
 	
